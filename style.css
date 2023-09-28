@@ -1,0 +1,134 @@
+body{
+    background-color: #131313d3;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.scroll-1::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .scroll-1::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #a5a5a5;
+  }
+  .container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 13px;
+    width: 280px;
+    height: 280px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 24px;
+    border-radius: 8px;
+  }
+  
+  .container .card {
+    flex: 0 0 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    scroll-snap-align: start;
+  }
+  
+  .card .card__image {
+    flex: 1;
+    height: 150px;
+  }
+  .cardContainer {
+    width: 150px;
+    height: 220px;
+    margin-top: 50%;
+    margin-left: 30%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition-duration: .5s;
+    cursor: pointer;
+  }
+  
+  .profileDiv {
+    z-index: 2;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    transition-duration: .5s;
+    color: rgb(155, 155, 155);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .cardContainer .profileDiv {
+    transform: translateX(-25%) translateY(-20%);
+  
+  }
+  
+  .infoDiv {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    z-index: 1;
+  }
+  
+  .nameDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    gap: 2px;
+  }
+  
+  .name {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .role {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    margin-bottom: 5px;
+  }
+  
+  .socialDiv {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(14, 14, 14);
+    gap: 25px;
+  }
+  
+  .socialDiv a {
+    color: #000;
+    width: 50%;
+    font-size: xx-large;
+    transition: .5s;
+  }
+  .socials {
+    width: 100%;
+    fill: rgb(14, 14, 14);
+  }
+  
