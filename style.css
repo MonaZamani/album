@@ -39,7 +39,7 @@ body{
   .main {
     display: grid;
     place-items: center;
-    width: 155px;
+    width: 140px;
     height: 250px;
     margin-top: 10%;
     
@@ -47,7 +47,7 @@ body{
   
   .cardd {
     width: 140px;
-    height: 180px;
+    height: 190px;
     background: #FAF1F6;
     padding: 2rem 2rem;
     transition: box-shadow .3s ease, transform .2s ease;
